@@ -1,0 +1,9 @@
+{
+  "codetogether.virtualCursorJoin": "sharedVirtualCursor",
+  "workbench.startupEditor": "none",
+  "editor.fontSize": 14,
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "terminal.integrated.enablePersistentSessions": false,
+  "terminal.integrated.persistentSessionReviveProcess": "never"
+}
