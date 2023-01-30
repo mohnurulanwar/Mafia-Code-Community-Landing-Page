@@ -1,7 +1,8 @@
 import { type NextPage } from "next";
 import Head from "next/head";
 
-import { Hero } from "../components/hero";
+import { Hero } from "@/components/HomePage/HeroSection";
+import TimelineSection from "@/components/HomePage/TimelineSection";
 
 const Home: NextPage = () => {
   return (
@@ -12,6 +13,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero />
+      <TimelineSection />
     </>
   );
 };
