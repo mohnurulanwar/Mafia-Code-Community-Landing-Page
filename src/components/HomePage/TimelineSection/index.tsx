@@ -24,12 +24,12 @@ const TimelineSection: FC = () => {
         />
         <NodeItem
           title="UI/UX"
-          icon={<Code1 size="40" color="white" />}
+          icon={<BrushSquare size="40" color="white" />}
           liIdx={2}
         />
         <NodeItem
           title="Development"
-          icon={<BrushSquare size="40" color="white" />}
+          icon={<Code1 size="40" color="white" />}
           liIdx={3}
         />
         <NodeItem

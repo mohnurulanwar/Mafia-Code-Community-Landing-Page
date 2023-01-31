@@ -3,6 +3,7 @@ import Head from "next/head";
 
 import { Hero } from "@/components/HomePage/HeroSection";
 import TimelineSection from "@/components/HomePage/TimelineSection";
+import AboutUsSection from "@/components/HomePage/AboutUsSection";
 
 const Home: NextPage = () => {
   return (
@@ -13,6 +14,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero />
+      <AboutUsSection />
       <TimelineSection />
     </>
   );
