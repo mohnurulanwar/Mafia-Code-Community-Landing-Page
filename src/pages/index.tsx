@@ -4,6 +4,7 @@ import Head from "next/head";
 import { Hero } from "@/components/HomePage/HeroSection";
 import TimelineSection from "@/components/HomePage/TimelineSection";
 import AboutUsSection from "@/components/HomePage/AboutUsSection";
+import OurProjectsSection from "@/components/HomePage/OurProjectsSection";
 
 const Home: NextPage = () => {
   return (
@@ -16,6 +17,7 @@ const Home: NextPage = () => {
       <Hero />
       <AboutUsSection />
       <TimelineSection />
+      <OurProjectsSection />
     </>
   );
 };
