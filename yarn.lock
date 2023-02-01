@@ -162,16 +162,16 @@
     "strip-json-comments" "^3.1.1"
 
 "@headlessui/react@^1.7.7":
-  "integrity" "sha512-BqDOd/tB9u2tA0T3Z0fn18ktw+KbVwMnkxxsGPIH2hzssrQhKB5n/6StZOyvLYP/FsYtvuXfi9I0YowKPv2c1w=="
-  "resolved" "https://registry.npmjs.org/@headlessui/react/-/react-1.7.7.tgz"
-  "version" "1.7.7"
+  "integrity" "sha512-zcwb0kd7L05hxmoAMIioEaOn235Dg0fUO+iGbLPgLVSjzl/l39V6DTpC2Df49PE5aG5/f5q0PZ9ZHZ78ENNV+A=="
+  "resolved" "https://registry.npmjs.org/@headlessui/react/-/react-1.7.8.tgz"
+  "version" "1.7.8"
   dependencies:
     "client-only" "^0.0.1"
 
 "@heroicons/react@^2.0.13":
-  "integrity" "sha512-iSN5XwmagrnirWlYEWNPdCDj9aRYVD/lnK3JlsC9/+fqGF80k8C7rl+1HCvBX0dBoagKqOFBs6fMhJJ1hOg1EQ=="
-  "resolved" "https://registry.npmjs.org/@heroicons/react/-/react-2.0.13.tgz"
-  "version" "2.0.13"
+  "integrity" "sha512-eFL4if6L7woL1fUvk/jjXx4z9NxVESHHrQnEd2qKVelTFTIr/3VLGWdPb0biia9ZVe26P0JSs/xmOlRNur3SrQ=="
+  "resolved" "https://registry.npmjs.org/@heroicons/react/-/react-2.0.14.tgz"
+  "version" "2.0.14"
 
 "@humanwhocodes/config-array@^0.11.8":
   "integrity" "sha512-UybHIJzJnR5Qc/MsD9Kr+RpO2h+/P1GhOwdiLPXK5TWk5sgTdu88bTD9UP+CKbPPh5Rni1u0GjAdYQLemG8g+g=="
@@ -236,11 +236,6 @@
   dependencies:
     "glob" "7.1.7"
 
-"@next/font@^13.1.6":
-  "integrity" "sha512-AITjmeb1RgX1HKMCiA39ztx2mxeAyxl4ljv2UoSBUGAbFFMg8MO7YAvjHCgFhD39hL7YTbFjol04e/BPBH5RzQ=="
-  "resolved" "https://registry.npmjs.org/@next/font/-/font-13.1.6.tgz"
-  "version" "13.1.6"
-
 "@next/swc-win32-x64-msvc@13.1.2":
   "integrity" "sha512-avsyveEvcvH42PvKjR4Pb8JlLttuGURr2H3ZhS2b85pHOiZ7yjH3rMUoGnNzuLMApyxYaCvd4MedPrLhnNhkog=="
   "resolved" "https://registry.npmjs.org/@next/swc-win32-x64-msvc/-/swc-win32-x64-msvc-13.1.2.tgz"
@@ -278,6 +273,11 @@
     "picocolors" "^1.0.0"
     "tiny-glob" "^0.2.9"
     "tslib" "^2.4.0"
+
+"@prisma/engines@4.9.0":
+  "integrity" "sha512-t1pt0Gsp+HcgPJrHFc+d/ZSAaKKWar2G/iakrE07yeKPNavDP3iVKPpfXP22OTCHZUWf7OelwKJxQgKAm5hkgw=="
+  "resolved" "https://registry.npmjs.org/@prisma/engines/-/engines-4.9.0.tgz"
+  "version" "4.9.0"
 
 "@rushstack/eslint-patch@^1.1.3":
   "integrity" "sha512-sXo/qW2/pAcmT43VoRKOJbDOfV3cYpq3szSVfIThQXNt+E4DfKj361vaAt3c88U5tPUxzEswam7GW48PJqtKAg=="
@@ -849,9 +849,9 @@
   "version" "3.1.1"
 
 "daisyui@^2.47.0":
-  "integrity" "sha512-svZpXKldtHjXTEdj/lu2n7b+EQJSatqvmVB59k4dhCDOYUhUZ3jtGuPrgOJlPysHhDjxjCRWWug/fgV5e8tc/w=="
-  "resolved" "https://registry.npmjs.org/daisyui/-/daisyui-2.47.0.tgz"
-  "version" "2.47.0"
+  "integrity" "sha512-+hEFMupi/7rqkAH4d3iBWj1TXRq73V3PrkJ3HiDqFuQgMoE1/UQOgMoeqaHa3r4IRo4fjMNauwHBA17qT0YSIA=="
+  "resolved" "https://registry.npmjs.org/daisyui/-/daisyui-2.49.0.tgz"
+  "version" "2.49.0"
   dependencies:
     "color" "^4.2"
     "css-selector-tokenizer" "^0.8.0"
@@ -2259,6 +2259,13 @@
   "resolved" "https://registry.npmjs.org/prettier/-/prettier-2.8.3.tgz"
   "version" "2.8.3"
 
+"prisma@^4.9.0":
+  "integrity" "sha512-bS96oZ5oDFXYgoF2l7PJ3Mp1wWWfLOo8B/jAfbA2Pn0Wm5Z/owBHzaMQKS3i1CzVBDWWPVnOohmbJmjvkcHS5w=="
+  "resolved" "https://registry.npmjs.org/prisma/-/prisma-4.9.0.tgz"
+  "version" "4.9.0"
+  dependencies:
+    "@prisma/engines" "4.9.0"
+
 "prop-types@^15.7.2", "prop-types@^15.8.1":
   "integrity" "sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg=="
   "resolved" "https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz"
@@ -2291,20 +2298,10 @@
     "loose-envify" "^1.1.0"
     "scheduler" "^0.23.0"
 
-"react-is@^16.13.1":
+"react-is@^16.13.1", "react-is@^16.7.0", "react-is@>= 16.8.0":
   "integrity" "sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ=="
   "resolved" "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
   "version" "16.13.1"
-
-"react-is@^16.7.0":
-  "integrity" "sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ=="
-  "resolved" "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
-  "version" "16.13.1"
-
-"react-is@>= 16.8.0":
-  "integrity" "sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w=="
-  "resolved" "https://registry.npmjs.org/react-is/-/react-is-18.2.0.tgz"
-  "version" "18.2.0"
 
 "react-ssr-prepass@^1.5.0":
   "integrity" "sha512-yFNHrlVEReVYKsLI5lF05tZoHveA5pGzjFbFJY/3pOqqjGOmMmqx83N4hIjN2n6E1AOa+eQEUxs3CgRnPmT0RQ=="
