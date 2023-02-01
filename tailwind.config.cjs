@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        "inter": ['Inter', 'sans-serif']
+      },
       colors: {
         "base-100": "#201F22",
         "base-300": "#39383A",
