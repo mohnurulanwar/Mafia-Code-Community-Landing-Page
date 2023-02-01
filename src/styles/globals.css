@@ -4,6 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Inter";
+  src: url("../../public/fonts/Inter.ttf");
+}
+
 @layer base {
   h1 {
     @apply font-bold;
