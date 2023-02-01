@@ -5,14 +5,11 @@
 @tailwind utilities;
 
 @layer base {
-  html {
-    font-family: "Poppins", sans-serif;
-  }
-
   h1 {
     @apply font-bold;
   }
 }
+
 @layer components {
   .hero-section {
     @apply relative z-50 m-auto flex min-h-screen w-full flex-col
@@ -20,7 +17,7 @@
       bg-no-repeat px-12 text-white sm:items-center sm:justify-center sm:gap-0 sm:px-10;
   }
   .hero-title {
-    @apply max-w-lg text-5xl text-4xl sm:mb-6 sm:max-w-lg sm:text-center sm:text-4xl md:mb-7 md:max-w-2xl md:text-5xl lg:mb-8 lg:max-w-3xl lg:text-6xl xl:mb-10 xl:max-w-5xl xl:text-7xl 2xl:mb-10 2xl:max-w-7xl 2xl:text-8xl;
+    @apply max-w-lg text-5xl sm:mb-6 sm:max-w-lg sm:text-center sm:text-4xl md:mb-7 md:max-w-2xl md:text-5xl lg:mb-8 lg:max-w-3xl lg:text-6xl xl:mb-10 xl:max-w-5xl xl:text-7xl 2xl:mb-10 2xl:max-w-7xl 2xl:text-8xl;
   }
   .hero-description {
     @apply text-[#C4C4C4] sm:mb-5 sm:max-w-md sm:text-center sm:text-xs md:mb-6 md:max-w-xl md:text-xs lg:mb-7 lg:max-w-2xl lg:text-sm xl:mb-8 xl:max-w-3xl xl:text-base 2xl:mb-8 2xl:max-w-4xl 2xl:text-lg;
@@ -31,4 +28,28 @@
   .hero-cta {
     @apply max-w-xs self-start rounded-full bg-[#2842A7] py-3 px-8 text-left font-semibold text-white sm:max-w-full sm:self-center sm:px-9 sm:py-3 sm:text-center sm:text-xs md:px-9 md:py-3 md:text-xs lg:px-9 lg:py-3 lg:text-sm xl:px-10 xl:py-4 xl:text-base 2xl:px-12 2xl:py-6 2xl:text-lg;
   }
+  .text-gradient-purple {
+    @apply bg-gradient-to-b from-[#ff1cf7] to-[#b249f8] bg-clip-text text-transparent;
+  }
 }
+
+.timeline-content {
+  display: grid; 
+  grid-template-columns: min-content min-content min-content; 
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+  "item-1 line ."
+  ". line item-2"
+  "item-3 line ."
+  ". line item-4"
+  "item-5 line ."
+  ". line item-6"; 
+}
+.line { grid-area: line; }
+.item-1 { grid-area: item-1; }
+.item-2 { grid-area: item-2; }
+.item-3 { grid-area: item-3; }
+.item-4 { grid-area: item-4; }
+.item-5 { grid-area: item-5; }
+.item-6 { grid-area: item-6; }
