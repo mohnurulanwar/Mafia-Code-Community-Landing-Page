@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        "inter": ['Inter', 'sans-serif']
+        inter: ["Inter", "sans-serif"],
       },
       colors: {
         "base-100": "#201F22",
@@ -47,15 +47,12 @@ module.exports = {
         "error-500": "#FF5151",
         "error-700": "#CC4141",
         "error-900": "#B33939",
-      }
+      },
     },
   },
-  plugins: [require("daisyui")],
+  plugins: [require("daisyui"), require("tailwind-scrollbar-hide")],
 
   daisyui: {
-    themes: [
-      {}
-    ]
+    themes: [{}],
   },
-
 };

@@ -8,7 +8,7 @@ type TabProps = {
 const Tab: FC<TabProps> = ({ tab, isActive = false }) => {
   return (
     <div
-      className={`tab tab-active text-xl font-medium text-white ${
+      className={`tab tab-active font-medium text-white md:text-sm xl:text-xl ${
         isActive ? "underline decoration-primary-500 underline-offset-4" : ""
       }`}
     >

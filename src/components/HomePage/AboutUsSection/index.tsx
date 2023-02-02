@@ -3,22 +3,23 @@ import Image from "next/image";
 
 const AboutUsSection: FC = () => {
   return (
-    <section className="min-h-fit w-full bg-base-500 py-10">
-      <h1 className="text-gradient-purple text-center text-5xl font-bold">
+    <section className="flex min-h-[100vh] w-full flex-col justify-center bg-base-500 py-24">
+      <h1 className="text-gradient-purple text-center text-3xl font-bold lg:text-4xl xl:text-5xl">
         About Us
       </h1>
-      <div className="flex items-center justify-center">
-        <Image
-          src="/img/logo-MCC.svg"
-          alt="logo Mafia Code Community"
-          width={450}
-          height={450}
-        />
-        <div>
-          <h2 className="text-3xl font-bold text-white">
+      <div className="flex flex-col items-center  justify-center px-12 md:flex-row md:px-10 lg:px-16">
+        <div className="img-wrapper relative h-72 w-72 lg:h-80 lg:w-80 xl:h-96 xl:w-96 ">
+          <Image
+            src="/img/logo-MCC.svg"
+            alt="logo Mafia Code Community"
+            fill={true}
+          />
+        </div>
+        <div className="flex flex-col items-center gap-4 md:items-start">
+          <h2 className="text-xl font-bold text-white lg:text-2xl xl:text-3xl">
             Mafia Code Community
           </h2>
-          <p className="max-w-2xl py-4 text-neutral-100">
+          <p className="max-w-md text-center text-xs text-neutral-100 md:max-w-md md:text-left lg:max-w-xl lg:text-sm xl:max-w-2xl xl:py-4 xl:text-base">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa
             ultricies mi quis hendrerit dolor magna eget est. Libero enim sed
