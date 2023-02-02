@@ -1,4 +1,4 @@
-import { FC, useEffect, useState } from "react";
+import { type FC, useEffect, useState } from "react";
 import Image from "next/image";
 import { Tag } from "iconsax-react";
 

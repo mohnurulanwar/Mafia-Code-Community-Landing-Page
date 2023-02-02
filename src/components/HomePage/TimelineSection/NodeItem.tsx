@@ -4,10 +4,9 @@ type NodeItemProps = {
   title: string;
   icon: JSX.Element;
   liIdx: number;
-  startColor: string;
 };
 
-const NodeItem = ({ title, icon, liIdx, startColor }: NodeItemProps) => {
+const NodeItem = ({ title, icon, liIdx }: NodeItemProps) => {
   const isEven = (num: number) => num % 2 === 0;
   // const IconTag = `${icon}` as keyof JSX.IntrinsicElements;
   return (

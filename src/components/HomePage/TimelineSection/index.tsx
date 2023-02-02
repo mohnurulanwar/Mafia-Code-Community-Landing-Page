@@ -1,5 +1,5 @@
 import NodeItem from "./NodeItem";
-import { FC, useEffect, useState } from "react";
+import { type FC, useEffect, useState } from "react";
 import {
   LampCharge,
   Code1,
@@ -38,37 +38,31 @@ const TimelineSection: FC<ICustomProps> = ({ screenWidth }) => {
           title="Brainstorming"
           icon={<LampCharge size={iconSize} color="white" />}
           liIdx={1}
-          startColor="#F81BF0"
         />
         <NodeItem
           title="UI/UX"
           icon={<BrushSquare size={iconSize} color="white" />}
           liIdx={2}
-          startColor="#D918D3"
         />
         <NodeItem
           title="Development"
           icon={<Code1 size={iconSize} color="white" />}
           liIdx={3}
-          startColor="#B814B4"
         />
         <NodeItem
           title="Testing"
           icon={<ShieldSearch size={iconSize} color="white" />}
           liIdx={4}
-          startColor="#981195"
         />
         <NodeItem
           title="Deployment"
           icon={<CloudConnection size={iconSize} color="white" />}
           liIdx={5}
-          startColor="#780D77"
         />
         <NodeItem
           title="Improvement"
           icon={<Hierarchy3 size={iconSize} color="white" />}
           liIdx={6}
-          startColor="#580A59"
         />
       </div>
     </section>
