@@ -18,7 +18,7 @@
 @layer components {
   .hero-section {
     @apply relative z-50 m-auto flex min-h-screen w-full flex-col
-      justify-center gap-12 bg-[#070609] bg-[url("/herobgaccent.png")] bg-right
+      justify-center gap-12 bg-[#070609] bg-[url("/img/herobgaccent.png")] bg-right
       bg-no-repeat px-12 text-white sm:items-center sm:justify-center sm:gap-0 sm:px-10;
   }
   .hero-title {
@@ -28,7 +28,7 @@
     @apply text-[#C4C4C4] sm:mb-5 sm:max-w-md sm:text-center sm:text-xs md:mb-6 md:max-w-xl md:text-xs lg:mb-7 lg:max-w-2xl lg:text-sm xl:mb-8 xl:max-w-3xl xl:text-base 2xl:mb-8 2xl:max-w-4xl 2xl:text-lg;
   }
   .blurred-ellipse {
-    @apply absolute left-0 bottom-32 hidden h-1/2 w-1/2 bg-[url('/ellipse43.png')] bg-contain bg-no-repeat xl:block;
+    @apply absolute left-0 bottom-32 hidden h-1/2 w-1/2 bg-[url('/img/ellipse43.png')] bg-contain bg-no-repeat xl:block;
   }
   .hero-cta {
     @apply max-w-xs self-start rounded-full bg-[#2842A7] py-3 px-8 text-left font-semibold text-white sm:max-w-full sm:self-center sm:px-9 sm:py-3 sm:text-center sm:text-xs md:px-9 md:py-3 md:text-xs lg:px-9 lg:py-3 lg:text-sm xl:px-10 xl:py-4 xl:text-base 2xl:px-12 2xl:py-6 2xl:text-lg;
