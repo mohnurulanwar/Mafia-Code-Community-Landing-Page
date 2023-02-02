@@ -23,6 +23,36 @@ To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the fo
 
 You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
 
+## Start Development
+
+To start development of this project, just following these steps:
+
+### 1. Fork this project
+
+### 2. Clone to your local machine
+
+```shell
+git clone <your repo>
+```
+### 3. Move to the project 
+```shell
+cd Mafia-Code-Community-Landing-Page
+```
+### 4. Install dependecies
+
+```shell
+npm install
+```
+
+### 5. Start Dev
+
+```shell
+npm run dev
+```
+
+### 6. Write your code
+
+&nbsp;
 ## How do I deploy this?
 
 Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
