@@ -80,9 +80,7 @@ const OurToolsSection: FC = () => {
     <>
       <section className="ourtools-section">
         <div className="tools-box">
-          <h1 className="text-gradient-purple text-center text-3xl font-bold lg:text-4xl xl:text-5xl">
-            Our Tools
-          </h1>
+          <h1 className="section-title">Tools Used</h1>
           <Cloud options={cloudOptions}>
             <div className="icons-cloud">{icons}</div>
             <a className="text-white">Mafia Code Community</a>

@@ -11,20 +11,27 @@ import Layout from "../Layout";
 
 import { useState, useEffect } from "react";
 
+import { countScreen } from "./utils/screenWidthUtil";
+
 const HomePage: FC = () => {
   const [screenWidth, setScreenWidth] = useState(1536);
+  const [breakpoint, setBreakpoint] = useState({ breakpoint: "2xl" });
   useEffect(() => {
     window.addEventListener("resize", () => {
       setScreenWidth(window.innerWidth);
     });
   }, []);
+  useEffect(() => {
+    setBreakpoint(countScreen(screenWidth));
+  }, [screenWidth]);
+
   return (
     <Layout title="MCC - Homepage">
       <>
         <HeroSection />
         <AboutUsSection />
-        <TimelineSection screenWidth={screenWidth} />
-        <OurProjectsSection screenWidth={screenWidth} />
+        <TimelineSection breakpoint={breakpoint.breakpoint} />
+        <OurProjectsSection />
         <OurToolsSection />
         <AboveFooterSection />
       </>
