@@ -75,7 +75,7 @@ const icons = importedIcons.map((icon) =>
   })
 );
 
-const OurTools: FC = () => {
+const OurToolsSection: FC = () => {
   return (
     <>
       <section className="ourtools-section">
@@ -93,4 +93,4 @@ const OurTools: FC = () => {
   );
 };
 
-export default OurTools;
+export default OurToolsSection;

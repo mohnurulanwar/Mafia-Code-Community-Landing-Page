@@ -14,7 +14,7 @@ const NodeItem = ({ title, icon, liIdx }: NodeItemProps) => {
       <div className={`item-${liIdx}`}>
         {!isEven(liIdx) ? (
           <div className={`flex items-center justify-end`}>
-            <div className="mr-4 flex w-20 flex-col-reverse items-center gap-8 md:w-full md:flex-row md:gap-0">
+            <div className="mr-4 flex w-20 flex-col-reverse items-center gap-8 md:w-full md:flex-row md:justify-end md:gap-0">
               <p className="pr-0 text-lg font-medium text-white md:pr-3 md:text-2xl xl:text-3xl">
                 {title}
               </p>

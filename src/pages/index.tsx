@@ -1,21 +1,8 @@
 import { type NextPage } from "next";
 import Head from "next/head";
-import { useState, useEffect } from "react";
-
-import HeroSection from "@/components/HomePage/HeroSection";
-import TimelineSection from "@/components/HomePage/TimelineSection";
-import AboutUsSection from "@/components/HomePage/AboutUsSection";
-import OurProjectsSection from "@/components/HomePage/OurProjectsSection";
-import OurTools from "@/components/HomePage/OurToolsSection";
+import HomePage from "@/components/HomePage";
 
 const Home: NextPage = () => {
-  const [screenWidth, setScreenWidth] = useState(1536);
-  useEffect(() => {
-    window.addEventListener("resize", () => {
-      setScreenWidth(window.innerWidth);
-    });
-  }, []);
-
   return (
     <div className="scrollbar-hide">
       <Head>
@@ -24,11 +11,7 @@ const Home: NextPage = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <HeroSection />
-      <AboutUsSection />
-      <TimelineSection screenWidth={screenWidth} />
-      <OurProjectsSection screenWidth={screenWidth} />
-      <OurTools />
+      <HomePage />
     </div>
   );
 };
