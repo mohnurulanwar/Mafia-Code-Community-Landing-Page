@@ -5,7 +5,7 @@ import { api } from "../utils/api";
 import "../styles/globals.css";
 
 const MyApp: AppType = ({ Component, pageProps }) => {
-  return <Component className="font-inter scrollbar-hide" {...pageProps} />;
+  return <Component {...pageProps} />;
 };
 
 export default api.withTRPC(MyApp);

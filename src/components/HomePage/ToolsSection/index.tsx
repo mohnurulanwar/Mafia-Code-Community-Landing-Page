@@ -77,17 +77,15 @@ const icons = importedIcons.map((icon) =>
 
 const ToolsSection: FC = () => {
   return (
-    <>
-      <section className="tools-section">
-        <div className="tools-box">
-          <h1 className="section-title">Tools Used</h1>
-          <Cloud options={cloudOptions}>
-            <div className="icons-cloud">{icons}</div>
-            <a className="text-white">Mafia Code Community</a>
-          </Cloud>
-        </div>
-      </section>
-    </>
+    <section className="tools-section">
+      <div className="tools-box">
+        <h1 className="section-title">Tools Used</h1>
+        <Cloud options={cloudOptions}>
+          <div className="icons-cloud">{icons}</div>
+          <span></span>
+        </Cloud>
+      </div>
+    </section>
   );
 };
 

@@ -22,7 +22,7 @@
 
 /* Global Component Syling */
 .section-title {
-  @apply text-gradient-purple text-center text-3xl font-bold lg:text-4xl xl:text-5xl;
+  @apply my-2 text-gradient-purple text-center text-3xl font-bold lg:text-4xl xl:text-5xl;
 }
 
 /* Hero Section Styling */
@@ -49,8 +49,8 @@
 /* ========================================== */
 
 /* Our Tools Section Styling */
-.ourtools-section {
-  @apply m-auto flex min-h-[100vh] w-[100vw] flex-col items-center justify-center bg-base-500 px-12;
+.tools-section {
+  @apply m-auto flex min-h-screen w-screen flex-col items-center justify-center bg-base-500 px-12;
 }
 .icons-cloud {
   @apply h-full w-full items-center justify-center;
