@@ -75,10 +75,10 @@ const icons = importedIcons.map((icon) =>
   })
 );
 
-const OurToolsSection: FC = () => {
+const ToolsSection: FC = () => {
   return (
     <>
-      <section className="ourtools-section">
+      <section className="tools-section">
         <div className="tools-box">
           <h1 className="section-title">Tools Used</h1>
           <Cloud options={cloudOptions}>
@@ -91,4 +91,4 @@ const OurToolsSection: FC = () => {
   );
 };
 
-export default OurToolsSection;
+export default ToolsSection;
