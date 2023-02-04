@@ -20,10 +20,15 @@
   }
 }
 
+/* Global Component Syling */
+.section-title {
+  @apply text-gradient-purple text-center text-3xl font-bold lg:text-4xl xl:text-5xl;
+}
+
 /* Hero Section Styling */
 .hero-section {
   @apply relative z-50 m-auto flex min-h-screen w-full flex-col
-      justify-center gap-12 bg-base-500 bg-[url("/herobgaccent.svg")] bg-right
+      justify-center gap-12 bg-base-500 bg-[url("/img/herobgaccent.svg")] bg-right
       bg-no-repeat py-16 px-12 text-white sm:items-center sm:justify-center sm:gap-0 sm:px-10;
 }
 .hero-title {
@@ -33,7 +38,7 @@
   @apply text-[#C4C4C4] sm:mb-5 sm:max-w-md sm:text-center sm:text-xs md:mb-6 md:max-w-xl md:text-xs lg:mb-7 lg:max-w-2xl lg:text-sm xl:mb-8 xl:max-w-3xl xl:text-base 2xl:mb-8 2xl:max-w-4xl 2xl:text-lg;
 }
 .blurred-ellipse {
-  @apply absolute left-0 bottom-32 hidden h-1/2 w-1/2 bg-[url('/ellipse43.png')] bg-contain bg-no-repeat xl:block;
+  @apply absolute left-0 bottom-32 hidden h-1/2 w-1/2 bg-[url('/img/ellipse43.svg')] bg-contain bg-no-repeat xl:block;
 }
 .hero-cta {
   @apply max-w-xs self-start rounded-full bg-[#2842A7] py-3 px-8 text-left font-semibold text-white sm:max-w-full sm:self-center sm:px-9 sm:py-3 sm:text-center sm:text-xs md:px-9 md:py-3 md:text-xs lg:px-9 lg:py-3 lg:text-sm xl:px-10 xl:py-4 xl:text-base 2xl:px-12 2xl:py-6 2xl:text-lg;
@@ -45,15 +50,30 @@
 
 /* Our Tools Section Styling */
 .ourtools-section {
-  @apply m-auto flex min-h-[100vh] w-[100vw] flex-col items-center justify-center bg-base-500;
+  @apply m-auto flex min-h-[100vh] w-[100vw] flex-col items-center justify-center bg-base-500 px-12;
 }
 .icons-cloud {
   @apply h-full w-full items-center justify-center;
 }
 .tools-box {
-  @apply rounded-3xl bg-gray-400 bg-opacity-10 p-10;
+  @apply rounded-3xl bg-opacity-10 p-10;
 }
 /* ===================================== */
+
+/* AboveFooter Section Styling */
+.abovefooter-section {
+  @apply flex min-h-[100vh] w-full flex-col items-center justify-center gap-6 bg-base-500 px-12 text-white md:gap-8 lg:gap-10 xl:gap-12;
+}
+.abovefooter-title {
+  @apply text-center;
+}
+.abovefooter-h1 {
+  @apply text-4xl font-medium md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl;
+}
+.abovefooter-cta {
+  @apply btn-primary btn rounded-full border-none bg-gradient-to-l from-[#ff1cf7] to-[#b249f8] px-14 py-2  text-xs font-bold capitalize md:py-3 md:px-16 md:text-sm lg:px-20 lg:text-base xl:px-24 xl:py-2 xl:text-lg;
+}
+/* =================================================== */
 .timeline-content {
   display: grid;
   grid-template-columns: min-content min-content min-content;

@@ -10,28 +10,21 @@ import {
 } from "iconsax-react";
 
 interface ICustomProps {
-  screenWidth: number;
+  breakpoint: string;
 }
 
-const TimelineSection: FC<ICustomProps> = ({ screenWidth }) => {
+const TimelineSection: FC<ICustomProps> = ({ breakpoint }) => {
   const [iconSize, setIconSize] = useState(40);
-  const countSize = (): number => {
-    if (screenWidth < 640) return 24;
-    if (screenWidth >= 640 && screenWidth < 768) return 24;
-    if (screenWidth >= 768 && screenWidth < 1024) return 32;
-    if (screenWidth >= 1024 && screenWidth < 1280) return 32;
-    if (screenWidth >= 1280 && screenWidth < 1536) return 40;
-    return 40;
-  };
+
   useEffect(() => {
-    setIconSize(countSize());
-  }, [screenWidth]);
+    if (breakpoint === "2xl" || breakpoint === "xl") setIconSize(40);
+    if (breakpoint === "lg" || breakpoint === "md") setIconSize(32);
+    if (breakpoint === "sm" || breakpoint === "xs") setIconSize(24);
+  }, [breakpoint]);
 
   return (
     <section className="flex min-h-[100vh] w-full flex-col justify-center bg-base-500 py-10">
-      <h1 className="text-gradient-purple text-center text-3xl font-bold lg:text-4xl xl:text-5xl">
-        Projects Timeline
-      </h1>
+      <h1 className="section-title">Projects Timeline</h1>
       <div className="timeline-content mt-8 justify-center ">
         <div className="line min-h-[64vh] w-2 rounded-full bg-gradient-to-b from-[#ff1cf7] to-[#3F0741] md:min-h-[72vh] md:w-3 xl:min-h-[80vh] xl:w-4" />
         <NodeItem

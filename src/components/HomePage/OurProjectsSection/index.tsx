@@ -3,16 +3,10 @@ import Tab from "./Tab";
 import CardProject from "./CardProject";
 import Badge from "./child/Badge";
 
-interface ICustomProps {
-  screenWidth: number;
-}
-
-const OurProjectsSection: FC<ICustomProps> = ({ screenWidth }) => {
+const OurProjectsSection: FC = () => {
   return (
     <section className="flex min-h-[100vh] w-full flex-col justify-center bg-base-500 py-10 xl:px-10">
-      <h1 className="text-gradient-purple text-center text-3xl font-bold lg:text-4xl xl:text-5xl">
-        Our Projects
-      </h1>
+      <h1 className="section-title">Our Projects</h1>
       <div className="tabs items-center justify-center gap-x-3 py-8 text-xl">
         <Tab tab="All" isActive />
         <Tab tab="Ongoing" />
@@ -31,7 +25,6 @@ const OurProjectsSection: FC<ICustomProps> = ({ screenWidth }) => {
               <Badge text="Mobile" />
             </>
           }
-          screenWidth={screenWidth}
         />
         <CardProject
           title="Moris - Fintech Application"
@@ -45,7 +38,6 @@ const OurProjectsSection: FC<ICustomProps> = ({ screenWidth }) => {
               <Badge text="Mobile" />
             </>
           }
-          screenWidth={screenWidth}
         />
       </div>
     </section>
