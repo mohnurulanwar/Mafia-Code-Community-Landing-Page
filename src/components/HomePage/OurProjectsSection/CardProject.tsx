@@ -19,7 +19,7 @@ const CardProject: FC<CardProjectProps> = ({ title, desc, badge }) => {
           width={640}
           height={520}
         />
-        <div className=" rounded-b-[2.5rem] py-4 px-2 backdrop-blur-sm backdrop-filter">
+        <div className=" rounded-b-[2.5rem] py-7 px-6 backdrop-blur-sm backdrop-filter">
           <p className="link-hover  text-lg font-bold text-white md:text-xl xl:text-2xl">
             {title}
           </p>
