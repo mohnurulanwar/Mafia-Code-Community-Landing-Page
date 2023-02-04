@@ -60,17 +60,17 @@
 }
 /* ===================================== */
 
-/* AboveFooter Section Styling */
-.abovefooter-section {
+/* CTA Section Styling */
+.CTA-section {
   @apply flex min-h-[100vh] w-full flex-col items-center justify-center gap-6 bg-base-500 px-12 text-white md:gap-8 lg:gap-10 xl:gap-12;
 }
-.abovefooter-title {
+.CTA-title {
   @apply text-center;
 }
-.abovefooter-h1 {
+.CTA-h1 {
   @apply text-4xl font-medium md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl;
 }
-.abovefooter-cta {
+.CTA-btn {
   @apply btn-primary btn rounded-full border-none bg-gradient-to-l from-[#ff1cf7] to-[#b249f8] px-14 py-2  text-xs font-bold capitalize md:py-3 md:px-16 md:text-sm lg:px-20 lg:text-base xl:px-24 xl:py-2 xl:text-lg;
 }
 /* =================================================== */
