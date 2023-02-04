@@ -38,7 +38,7 @@ const Layout: FC<LayoutProps> = ({ title, children }) => {
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
-      <main>{children}</main>
+      <main className="font-inter scrollbar-hide">{children}</main>
     </>
   );
 };
