@@ -21,7 +21,7 @@ const TimelineSection: FC = () => {
   }, [breakpoint]);
 
   return (
-    <section className="flex min-h-[100vh] w-full flex-col justify-center bg-base-500 py-10">
+    <section className="section-container flex flex-col justify-center bg-base-500 py-10">
       <h1 className="section-title">Projects Timeline</h1>
       <div className="timeline-content mt-8 justify-center ">
         <div className="line min-h-[64vh] w-2 rounded-full bg-gradient-to-b from-[#ff1cf7] to-[#3F0741] md:min-h-[72vh] md:w-3 xl:min-h-[80vh] xl:w-4" />

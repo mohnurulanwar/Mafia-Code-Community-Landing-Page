@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const AboutUsSection: FC = () => {
   return (
-    <section className="flex min-h-[100vh] w-full flex-col justify-center bg-base-500 py-24">
+    <section className="section-container flex flex-col justify-center bg-base-500 py-24">
       <h1 className="section-title">About Us</h1>
       <div className="flex flex-col items-center  justify-center px-12 md:flex-row md:px-10 lg:px-16">
         <div className="img-wrapper relative h-72 w-72 lg:h-80 lg:w-80 xl:h-96 xl:w-96 ">
