@@ -28,13 +28,17 @@
   @apply min-h-screen w-full px-12 md:px-10 xl:px-9;
 }
 .section-paragraph {
-  @apply max-w-md text-center text-xs text-neutral-100 md:max-w-md md:text-left lg:max-w-xl lg:text-sm xl:max-w-2xl xl:py-4 xl:text-base;
+  @apply max-w-md text-justify text-xs text-neutral-100 lg:max-w-xl lg:text-sm xl:max-w-2xl xl:py-4 xl:text-base;
+}
+.centered-layout {
+  @apply flex
+  flex-col items-center justify-center gap-12 py-16 sm:gap-8;
 }
 /* Hero Section Styling */
 .hero-section {
-  @apply section-container relative z-50 m-auto flex
-      flex-col justify-center gap-12 bg-base-500 bg-[url("/img/herobgaccent.svg")]
-      bg-right bg-no-repeat py-16 text-white sm:items-center sm:justify-center sm:gap-0;
+  @apply section-container relative
+  flex flex-col justify-center gap-12 bg-base-500  bg-[url("/img/herobgaccent.svg")]  bg-right bg-no-repeat
+      py-16 text-white  sm:items-center sm:gap-0;
 }
 .hero-title {
   @apply max-w-lg text-5xl sm:mb-6 sm:max-w-lg sm:text-center sm:text-4xl md:mb-7 md:max-w-2xl md:text-5xl lg:mb-8 lg:max-w-3xl lg:text-6xl xl:mb-10 xl:max-w-5xl xl:text-7xl 2xl:mb-10 2xl:max-w-7xl 2xl:text-8xl;
