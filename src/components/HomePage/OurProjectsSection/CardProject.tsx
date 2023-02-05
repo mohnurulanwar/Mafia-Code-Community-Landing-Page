@@ -1,5 +1,6 @@
 import { type FC } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { Tag } from "iconsax-react";
 
 type CardProjectProps = {
@@ -20,9 +21,15 @@ const CardProject: FC<CardProjectProps> = ({ title, desc, badge }) => {
           height={520}
         />
         <div className=" rounded-b-[2.5rem] py-7 px-6 backdrop-blur-sm backdrop-filter">
-          <p className="link-hover  text-lg font-bold text-white md:text-xl xl:text-2xl">
+          <Link
+            href={{
+              pathname: "/project/[name-project]",
+              query: { "name-project": "Moris" },
+            }}
+            className="link-hover  text-lg font-bold text-white md:text-xl xl:text-2xl"
+          >
             {title}
-          </p>
+          </Link>
           <p className=" py-2 text-xs text-neutral-300 lg:text-sm">{desc}</p>
           <div className="my-2 flex items-center gap-x-2">
             <Tag
