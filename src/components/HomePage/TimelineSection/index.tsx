@@ -8,13 +8,11 @@ import {
   CloudConnection,
   Hierarchy3,
 } from "iconsax-react";
+import { useBreakpoint } from "@/utils/screenWidthUtil";
 
-interface ICustomProps {
-  breakpoint: string;
-}
-
-const TimelineSection: FC<ICustomProps> = ({ breakpoint }) => {
+const TimelineSection: FC = () => {
   const [iconSize, setIconSize] = useState(40);
+  const breakpoint = useBreakpoint();
 
   useEffect(() => {
     if (breakpoint === "2xl" || breakpoint === "xl") setIconSize(40);
