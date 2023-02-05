@@ -17,7 +17,7 @@ const AboutUsSection: FC = () => {
           <h2 className="text-xl font-bold text-white lg:text-2xl xl:text-3xl">
             Mafia Code Community
           </h2>
-          <p className="max-w-md text-center text-xs text-neutral-100 md:max-w-md md:text-left lg:max-w-xl lg:text-sm xl:max-w-2xl xl:py-4 xl:text-base">
+          <p className="section-paragraph">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa
             ultricies mi quis hendrerit dolor magna eget est. Libero enim sed

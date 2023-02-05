@@ -27,7 +27,9 @@
 .section-container {
   @apply min-h-screen w-full px-12 md:px-10 xl:px-9;
 }
-
+.section-paragraph {
+  @apply max-w-md text-center text-xs text-neutral-100 md:max-w-md md:text-left lg:max-w-xl lg:text-sm xl:max-w-2xl xl:py-4 xl:text-base;
+}
 /* Hero Section Styling */
 .hero-section {
   @apply section-container relative z-50 m-auto flex
