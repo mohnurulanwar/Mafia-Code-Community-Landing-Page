@@ -5,7 +5,7 @@ import Badge from "./child/Badge";
 
 const OurProjectsSection: FC = () => {
   return (
-    <section className="flex min-h-[100vh] w-full flex-col justify-center bg-base-500 py-10 xl:px-10">
+    <section className="section-container flex flex-col justify-center bg-base-500 py-10">
       <h1 className="section-title">Our Projects</h1>
       <div className="tabs items-center justify-center gap-x-3 py-8 text-xl">
         <Tab tab="All" isActive />

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const AboutUsSection: FC = () => {
   return (
-    <section className="flex min-h-[100vh] w-full flex-col justify-center bg-base-500 py-24">
+    <section className="section-container flex flex-col justify-center bg-base-500 py-24">
       <h1 className="section-title">About Us</h1>
       <div className="flex flex-col items-center  justify-center px-12 md:flex-row md:px-10 lg:px-16">
         <div className="img-wrapper relative h-72 w-72 lg:h-80 lg:w-80 xl:h-96 xl:w-96 ">
@@ -17,7 +17,7 @@ const AboutUsSection: FC = () => {
           <h2 className="text-xl font-bold text-white lg:text-2xl xl:text-3xl">
             Mafia Code Community
           </h2>
-          <p className="max-w-md text-center text-xs text-neutral-100 md:max-w-md md:text-left lg:max-w-xl lg:text-sm xl:max-w-2xl xl:py-4 xl:text-base">
+          <p className="section-paragraph">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa
             ultricies mi quis hendrerit dolor magna eget est. Libero enim sed

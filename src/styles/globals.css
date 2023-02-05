@@ -22,14 +22,23 @@
 
 /* Global Component Syling */
 .section-title {
-  @apply my-2 text-gradient-purple text-center text-3xl font-bold lg:text-4xl xl:text-5xl;
+  @apply text-gradient-purple my-2 text-center text-3xl font-bold lg:text-4xl xl:text-5xl;
 }
-
+.section-container {
+  @apply min-h-screen w-full px-12 md:px-10 xl:px-9;
+}
+.section-paragraph {
+  @apply max-w-md text-justify text-xs text-neutral-100 lg:max-w-xl lg:text-sm xl:max-w-2xl xl:py-4 xl:text-base;
+}
+.centered-layout {
+  @apply flex
+  flex-col items-center justify-center gap-12 py-16 sm:gap-8;
+}
 /* Hero Section Styling */
 .hero-section {
-  @apply relative z-50 m-auto flex min-h-screen w-full flex-col
-      justify-center gap-12 bg-base-500 bg-[url("/img/herobgaccent.svg")] bg-right
-      bg-no-repeat py-16 px-12 text-white sm:items-center sm:justify-center sm:gap-0 sm:px-10;
+  @apply section-container relative
+  flex flex-col justify-center gap-12 bg-base-500  bg-[url("/img/herobgaccent.svg")]  bg-right bg-no-repeat
+      py-16 text-white  sm:items-center sm:gap-0;
 }
 .hero-title {
   @apply max-w-lg text-5xl sm:mb-6 sm:max-w-lg sm:text-center sm:text-4xl md:mb-7 md:max-w-2xl md:text-5xl lg:mb-8 lg:max-w-3xl lg:text-6xl xl:mb-10 xl:max-w-5xl xl:text-7xl 2xl:mb-10 2xl:max-w-7xl 2xl:text-8xl;
@@ -50,7 +59,7 @@
 
 /* Our Tools Section Styling */
 .tools-section {
-  @apply m-auto flex min-h-screen w-screen flex-col items-center justify-center bg-base-500 px-12;
+  @apply section-container m-auto flex flex-col items-center justify-center bg-base-500;
 }
 .icons-cloud {
   @apply h-full w-full items-center justify-center;
@@ -62,7 +71,7 @@
 
 /* CTA Section Styling */
 .CTA-section {
-  @apply flex min-h-[100vh] w-full flex-col items-center justify-center gap-6 bg-base-500 px-12 text-white md:gap-8 lg:gap-10 xl:gap-12;
+  @apply section-container flex flex-col items-center justify-center gap-6 bg-base-500 text-white md:gap-8 lg:gap-10 xl:gap-12;
 }
 .CTA-title {
   @apply text-center;
