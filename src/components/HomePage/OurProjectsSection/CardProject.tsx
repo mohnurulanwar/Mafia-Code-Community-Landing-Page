@@ -26,7 +26,7 @@ const CardProject: FC<CardProjectProps> = ({ title, desc, badge }) => {
               pathname: "/project/[name-project]",
               query: { "name-project": "Moris" },
             }}
-            className="link-hover  text-lg font-bold text-white md:text-xl xl:text-2xl"
+            className="link-hover text-lg font-bold text-white md:text-xl xl:text-2xl"
           >
             {title}
           </Link>
