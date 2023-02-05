@@ -29,9 +29,10 @@ model Divisions {
     member        Members[]
 }
 
-model Projects{
+model Projects {
     id            String    @id @default(auto()) @map("_id") @db.ObjectId
     project_name  String
+    project_slug  String
     description   String
     timeline      Timeline
     memberId      String[]    @db.ObjectId
