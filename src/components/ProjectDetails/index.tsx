@@ -1,3 +1,4 @@
 import { HeadCoverSection } from "./HeadCoverSection";
+import { MockupSection } from "./MockupSection";
 
-export { HeadCoverSection };
+export { HeadCoverSection, MockupSection };
