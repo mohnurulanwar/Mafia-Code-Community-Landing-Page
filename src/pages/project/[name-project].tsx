@@ -1,6 +1,6 @@
-import Layout from "@/components/Layout";
-import { ProjectTimeline } from "@/components/ProjectsPage";
 import { type NextPage } from "next";
+import Layout from "@/components/Layout";
+import { HeadCoverSection, MockupSection, ProjectTimeline } from "@/components/ProjectDetailPage";
 import { useRouter } from "next/router";
 
 const Project: NextPage = () => {
@@ -9,7 +9,8 @@ const Project: NextPage = () => {
 
   return (
     <Layout title="Detail Project - Mafia Code Community">
-      <h1>Project</h1>
+      <HeadCoverSection />
+      <MockupSection />
       <ProjectTimeline />
     </Layout>
   );
