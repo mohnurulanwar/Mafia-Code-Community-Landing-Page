@@ -1,6 +1,7 @@
 import type { FC } from "react";
 import Image from "next/image";
 import { useState, useEffect } from "react";
+import { BiMenu } from "react-icons/bi";
 
 const Header: FC = () => {
   const navMenus = [
@@ -12,9 +13,14 @@ const Header: FC = () => {
   ];
 
   const [isScroll, setIsScroll] = useState(false);
+  const [isOpenMenu, setIsOpenMenu] = useState(false);
 
   const handleScroll = () => {
     document.body.scrollTop >= 50 ? setIsScroll(true) : setIsScroll(false);
+  };
+
+  const handleToggleMenu = () => {
+    setIsOpenMenu(!isOpenMenu);
   };
 
   useEffect(() => {
@@ -24,19 +30,35 @@ const Header: FC = () => {
 
   return (
     <header
-      className={`fixed top-0 z-30 left-0 right-4 ${
+      className={`fixed top-0 left-0 right-4 z-30 ${
         isScroll ? "bg-black" : "bg-transparent"
       }`}
     >
-      <div className="flex items-center justify-between px-12 md:px-10 xl:pl-5 xl:pr-16">
-        <div className="img-wrapper relative md:h-20 md:w-20 lg:h-24 lg:w-24">
+      <div className="flex items-center justify-between px-5 md:px-10 xl:pl-5 xl:pr-16">
+        <div className="relative h-16 w-16 md:h-20 md:w-20 lg:h-24 lg:w-24">
           <Image src="/img/logo-MCC.svg" alt="logo Mafia Code Community" fill />
         </div>
-        <nav>
-          <ul className="flex gap-x-10">
+        <div className="md:hidden">
+          <p className="text-lg font-medium text-white">Mafia Code Comunity</p>
+        </div>
+        <div
+          className="cursor-pointer text-lg text-white md:hidden"
+          onClick={handleToggleMenu}
+        >
+          <BiMenu></BiMenu>
+        </div>
+        <nav
+          className={`${
+            isOpenMenu ? "max-[768px]:scale-y-1" : "max-[768px]:scale-y-0"
+          } absolute inset-0 top-14 grid h-[100vh] origin-top place-items-center rounded-lg bg-[#14121A]/5 backdrop-blur transition md:static md:block md:h-auto`}
+        >
+          <ul className="flex flex-col gap-x-10 gap-y-6 text-center md:flex-row md:text-left">
             {navMenus.map((menu, index) => (
               <li key={index}>
-                <a href={menu.link} className="nav__link text-white font-medium lg:text-lg">
+                <a
+                  href={menu.link}
+                  className="nav__link text-xl font-medium text-white md:text-lg"
+                >
                   {menu.text}
                 </a>
               </li>
