@@ -34,6 +34,13 @@
   @apply flex
   flex-col items-center justify-center gap-12 py-16 sm:gap-8;
 }
+
+/* HEADER */
+/* NAV */
+.nav__link:hover {
+  @apply text-gradient-purple;
+}
+
 /* Hero Section Styling */
 .hero-section {
   @apply section-container relative
