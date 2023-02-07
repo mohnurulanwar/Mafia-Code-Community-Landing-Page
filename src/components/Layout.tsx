@@ -1,5 +1,6 @@
 import type { FC } from "react";
 import Head from "next/head";
+import Header from "./Header";
 
 type LayoutProps = {
   title: string;
@@ -38,6 +39,7 @@ const Layout: FC<LayoutProps> = ({ title, children }) => {
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
+      <Header></Header>
       <main className="font-inter scrollbar-hide">{children}</main>
     </>
   );
