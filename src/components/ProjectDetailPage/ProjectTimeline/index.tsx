@@ -12,7 +12,7 @@ const ProjectTimeline: FC = () => {
     <section className="section-container mt-20">
       <h1 className="section-title pb-3">Project Timeline</h1>
       <div className="flex w-[80vw] mx-auto flex-col items-center">
-        <div className="grid grid-flow-col grid-col-5 w-fit gap-10 w-full">
+        <div className="grid grid-flow-col grid-col-5 w-fit gap-10">
           <NodeItem
             idx={1}
             title="Resources"
