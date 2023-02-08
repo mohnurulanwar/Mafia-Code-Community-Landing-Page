@@ -1,6 +1,7 @@
 import type { FC } from "react";
 import Head from "next/head";
 import Header from "./Header";
+import Footer from "./Footer";
 
 type LayoutProps = {
   title: string;
@@ -41,6 +42,7 @@ const Layout: FC<LayoutProps> = ({ title, children }) => {
       </Head>
       <Header></Header>
       <main className="font-inter scrollbar-hide">{children}</main>
+      <Footer/>
     </>
   );
 };
