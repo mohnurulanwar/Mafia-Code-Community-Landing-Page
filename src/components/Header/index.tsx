@@ -1,5 +1,6 @@
 import type { FC } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { useState, useEffect } from "react";
 import { HambergerMenu } from "iconsax-react";
 
@@ -34,9 +35,9 @@ const Header: FC = () => {
         }`}
     >
       <div className="flex items-center justify-between px-5 md:px-10 xl:pl-5 xl:pr-16">
-        <div className="relative h-16 w-16 md:h-20 md:w-20 lg:h-24 lg:w-24">
+        <Link href="/" className="relative h-16 w-16 md:h-20 md:w-20 lg:h-24 lg:w-24">
           <Image src="/img/logo-MCC.svg" alt="logo Mafia Code Community" fill />
-        </div>
+        </Link>
         <div className="md:hidden">
           <p className="text-lg font-medium text-white">Mafia Code Comunity</p>
         </div>
@@ -53,12 +54,12 @@ const Header: FC = () => {
           <ul className="flex flex-col gap-x-3 gap-y-6 text-center md:flex-row md:text-left">
             {navMenus.map((menu, index) => (
               <li key={index}>
-                <a
+                <Link
                   href={menu.link}
                   className="nav__link text-xl font-medium text-white rounded-xl py-2 px-4 md:text-lg"
                 >
                   {menu.text}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>

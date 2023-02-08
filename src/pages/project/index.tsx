@@ -1,9 +1,9 @@
 import { type NextPage } from "next";
 
 const Projects: NextPage = () => {
-  return(
+  return (
     <>
-    <h1>PROJECT PAGE</h1>
+      <h1>PROJECT PAGE</h1>
     </>
   );
 };

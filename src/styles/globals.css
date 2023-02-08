@@ -22,7 +22,7 @@
 
 /* Global Component Syling */
 .section-title {
-  @apply text-gradient-purple my-2 text-center text-3xl font-bold lg:text-4xl xl:text-5xl;
+  @apply text-gradient-purple py-2 text-center text-3xl font-bold lg:text-4xl xl:text-5xl;
 }
 .section-container {
   @apply min-h-screen w-full px-12 md:px-10 xl:px-9;
@@ -149,4 +149,8 @@
 
 .bg-glass-gray {
   @apply bg-gray-400 bg-opacity-10 backdrop-blur-sm backdrop-filter;
+}
+
+.bg-glass-gray-100 {
+  @apply bg-gray-400 bg-opacity-5 backdrop-blur-sm backdrop-filter;
 }
