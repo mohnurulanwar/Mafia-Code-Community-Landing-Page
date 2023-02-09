@@ -41,7 +41,7 @@ const Layout: FC<LayoutProps> = ({ title, children }) => {
         <meta name="theme-color" content="#ffffff" />
       </Head>
       <Header />
-      <main>{children}</main>
+      <main className="">{children}</main>
       <Footer />
     </>
   );

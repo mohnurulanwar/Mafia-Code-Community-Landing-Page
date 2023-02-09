@@ -18,7 +18,7 @@ const Header: FC = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
 
   const handleScroll = () => {
-    document.body.scrollTop >= 50 ? setIsScroll(true) : setIsScroll(false);
+    window.scrollY > 0 ? setIsScroll(true) : setIsScroll(false);
   };
 
   const handleToggleMenu = () => {
@@ -26,8 +26,8 @@ const Header: FC = () => {
   };
 
   useEffect(() => {
-    document.body.addEventListener("scroll", handleScroll);
-    return () => document.body.removeEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   });
 
   return (
