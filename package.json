@@ -16,6 +16,8 @@
     "@trpc/react-query": "^10.8.1",
     "@trpc/server": "^10.8.1",
     "daisyui": "^2.47.0",
+    "flowbite": "^1.6.3",
+    "flowbite-react": "^0.3.8",
     "iconsax-react": "^0.0.8",
     "next": "13.1.2",
     "nuka-carousel": "^5.4.1",
