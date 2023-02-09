@@ -1,7 +1,7 @@
 import { type FC } from "react";
 import Image from "next/image";
 
-export const MockupSection: FC = () => {
+const MockupSection: FC = () => {
   return (
     <>
       <section className="section-container centered-layout relative bg-base-500">
@@ -30,3 +30,5 @@ export const MockupSection: FC = () => {
     </>
   );
 };
+
+export default MockupSection;

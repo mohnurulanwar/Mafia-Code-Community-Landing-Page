@@ -1,7 +1,6 @@
 import { type NextPage } from "next";
 import Layout from "@/components/Layout";
-import { HeadCoverSection, MockupSection, ProjectTimeline } from "@/components/ProjectDetailPage";
-import PageDetailsSection from "@/components/ProjectDetailPage/PageDetailsSection";
+import { HeadCoverSection, MockupSection, ProjectTimeline, PageDetailsSection, PresentationVideoSection } from "@/components/ProjectDetailPage";
 import { useRouter } from "next/router";
 
 const Project: NextPage = () => {
@@ -14,6 +13,7 @@ const Project: NextPage = () => {
       <MockupSection />
       <ProjectTimeline />
       <PageDetailsSection />
+      <PresentationVideoSection />
     </Layout>
   );
 };

@@ -16,7 +16,7 @@
   }
 
   body {
-    @apply m-0 h-full w-full overflow-x-hidden bg-base-500 p-0;
+    @apply m-0 box-border h-full w-full overflow-x-hidden bg-base-500 p-0;
   }
 }
 

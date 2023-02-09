@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export const HeadCoverSection = () => {
+const HeadCoverSection = () => {
   return (
     <>
       <section className="section-container centered-layout bg-base-500">
@@ -21,3 +21,5 @@ export const HeadCoverSection = () => {
     </>
   );
 };
+
+export default HeadCoverSection;
