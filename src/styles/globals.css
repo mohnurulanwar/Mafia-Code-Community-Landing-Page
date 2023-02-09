@@ -38,7 +38,7 @@
 /* HEADER */
 /* NAV */
 .nav__link:hover {
-  @apply bg-glass-gray text-gradient-purple;
+  @apply text-gradient-purple;
 }
 
 /* Hero Section Styling */

@@ -2,7 +2,8 @@ import type { FC } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import { HambergerMenu } from "iconsax-react";
+import { IoClose } from "react-icons/io5"
+import { RiMenu5Line } from "react-icons/ri"
 
 const Header: FC = () => {
   const navMenus = [
@@ -42,21 +43,21 @@ const Header: FC = () => {
           <p className="text-lg font-medium text-white">Mafia Code Comunity</p>
         </div>
         <div
-          className="cursor-pointer text-lg text-white md:hidden"
+          className="cursor-pointer text-lg transition text-white md:hidden"
           onClick={handleToggleMenu}
         >
-          <HambergerMenu color="#fff" size={32} />
+          {isOpenMenu ? <IoClose className="text-primary-500" size={25} /> : <RiMenu5Line className="text-purple-500" size={25} />}
         </div>
         <nav
           className={`${isOpenMenu ? "max-[768px]:scale-y-1" : "max-[768px]:scale-y-0"
-            } absolute inset-0 top-14 grid h-screen origin-top place-items-center rounded-lg transition md:static md:block md:h-auto`}
+            } absolute inset-0 top-14 grid h-screen origin-top-right place-items-center bg-[#14121A]/5 backdrop-blur-sm md:bg-transparent md:backdrop-blur-0 rounded-lg transition md:static md:block md:h-auto`}
         >
           <ul className="flex flex-col gap-x-3 gap-y-6 text-center md:flex-row md:text-left">
             {navMenus.map((menu, index) => (
-              <li key={index}>
+              <li key={index} className="">
                 <Link
                   href={menu.link}
-                  className="nav__link text-xl font-medium text-white rounded-xl py-2 px-4 md:text-lg"
+                  className="nav__link transition text-2xl font-semibold text-white py-2 px-4 md:text-lg"
                 >
                   {menu.text}
                 </Link>
