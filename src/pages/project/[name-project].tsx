@@ -6,7 +6,8 @@ import {
   ProjectTimeline,
   PageDetailsSection,
   PresentationVideoSection,
-  ContributorSection
+  ContributorSection,
+  TechStackSection
 } from "@/components/ProjectDetailPage";
 import { useRouter } from "next/router";
 
@@ -22,6 +23,7 @@ const Project: NextPage = () => {
       <PageDetailsSection />
       <PresentationVideoSection />
       <ContributorSection />
+      <TechStackSection />
     </Layout>
   );
 };
