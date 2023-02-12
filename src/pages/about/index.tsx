@@ -1,9 +1,10 @@
 import { type NextPage } from "next";
+import { HeadCoverSection } from "@/components/AboutCommunityPage"
 
 const About: NextPage = () => {
-  return(
+  return (
     <>
-    <h1>ABOUT PAGE</h1>
+      <HeadCoverSection />
     </>
   );
 };
