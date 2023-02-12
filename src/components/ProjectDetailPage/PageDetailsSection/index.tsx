@@ -1,5 +1,5 @@
 import { type FC } from "react";
-import CarouselContent from "./CarouselContent";
+import CarouselItem from "./CarouselItem";
 import CardItem from "./CardItem";
 
 const PageDetailsSection: FC = () => {
@@ -7,7 +7,7 @@ const PageDetailsSection: FC = () => {
         <>
             <section className="section-container centered-layout relative bg-base-500">
                 <h1 className="section-title">Page Details</h1>
-                <CarouselContent>
+                <CarouselItem>
                     <CardItem
                         title="Home Page"
                         desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod."
@@ -23,7 +23,7 @@ const PageDetailsSection: FC = () => {
                         desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod."
                         srcImg="/img/sc-mobile-page.png"
                     />
-                </CarouselContent>
+                </CarouselItem>
             </section>
         </>
     )
