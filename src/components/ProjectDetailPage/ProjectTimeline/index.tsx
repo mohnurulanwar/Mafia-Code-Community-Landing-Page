@@ -13,7 +13,7 @@ const ProjectTimeline: FC = () => {
       <h1 className="section-title pb-3">Project Timeline</h1>
       <div className="flex w-[80vw] mx-auto flex-col items-center">
         <div className="grid grid-flow-col grid-col-5 w-fit gap-10">
-          {/* <div className="absolute top-1/2 right-11 h-1 w-[50vw] bg-white border-1 border-gray-300" /> */}
+          <div className="place-self-center absolute h-[3px] w-[50vw] bg-white mt-32" />
           <NodeItem
             idx={1}
             title="Resources"
