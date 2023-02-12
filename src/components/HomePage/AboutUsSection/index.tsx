@@ -3,7 +3,15 @@ import Image from "next/image";
 
 const AboutUsSection: FC = () => {
   return (
-    <section className="section-container flex flex-col justify-center bg-base-500 py-24">
+    <section className="section-container flex flex-col justify-center py-24">
+      <span className="flex absolute container justify-end -z-10 opacity-80">
+        <Image
+          src="/img/bg-section/ellipse-blur4.svg"
+          alt="background section"
+          width={800}
+          height={700}
+        />
+      </span>
       <h1 className="section-title">About Us</h1>
       <div className="flex flex-col items-center  justify-center px-12 md:flex-row md:px-10 lg:px-16">
         <div className="img-wrapper relative h-72 w-72 lg:h-80 lg:w-80 xl:h-96 xl:w-96 ">
