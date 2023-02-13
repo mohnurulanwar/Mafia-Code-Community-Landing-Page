@@ -33,7 +33,7 @@ const CardProject: FC<CardProjectProps> = ({ title, desc, badge }) => {
         <div className=" rounded-b-[2.5rem] py-7 px-6 bg-[#242529] opacity-80">
           <Link
             href={{
-              pathname: "/project/[name-project]",
+              pathname: "/projects/[name-project]",
               query: { "name-project": "Moris" },
             }}
             className="link-hover text-lg font-bold text-white md:text-xl xl:text-2xl"
