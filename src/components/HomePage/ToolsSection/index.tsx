@@ -28,16 +28,19 @@ import {
 } from "simple-icons";
 
 export const cloudOptions: Omit<typeof Cloud, "children"> = {
-  // https://www.goat1000.com/tagcanvas-options.php
-  clickToFront: 500,
-  depth: 1,
-  imageScale: 2,
-  initial: [0.1, -0.1],
-  outlineColour: "#0000",
-  reverse: true,
-  tooltip: "native",
-  tooltipDelay: 0,
-  wheelZoom: false,
+  id: 'stable-id-for-csr-ssr',
+  options: {
+    active: 0.3,
+    clickToFront: 500,
+    depth: 1,
+    imageScale: 2,
+    initial: [0.1, -0.1],
+    outlineColour: "#0000",
+    reverse: true,
+    tooltip: "native",
+    tooltipDelay: 0,
+    wheelZoom: false,
+  }
 };
 
 const importedIcons = [
@@ -90,7 +93,7 @@ const ToolsSection: FC = () => {
       </span>
       <div className="tools-box">
         <h1 className="section-title">Tools Used</h1>
-        <Cloud options={cloudOptions}>
+        <Cloud {...cloudOptions}>
           <div className="icons-cloud">{icons}</div>
           <span></span>
         </Cloud>
