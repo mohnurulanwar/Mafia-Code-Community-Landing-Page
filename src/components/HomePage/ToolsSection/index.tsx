@@ -1,4 +1,5 @@
 import type { FC } from "react";
+import Image from "next/image";
 import { Cloud, renderSimpleIcon } from "react-icon-cloud";
 import {
   siJavascript,
@@ -78,6 +79,15 @@ const icons = importedIcons.map((icon) =>
 const ToolsSection: FC = () => {
   return (
     <section className="tools-section">
+      <span className="flex justify-center absolute -z-10 opacity-80">
+        <Image
+          src="/img/bg-section/ellipse-blur2.svg"
+          className=""
+          alt="background section"
+          width={900}
+          height={800}
+        />
+      </span>
       <div className="tools-box">
         <h1 className="section-title">Tools Used</h1>
         <Cloud options={cloudOptions}>

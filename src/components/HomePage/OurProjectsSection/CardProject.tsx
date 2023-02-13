@@ -2,7 +2,7 @@ import { type FC } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Tag } from "iconsax-react";
-import CarouselContent from "@/components/children/CarouselContent";
+import CarouselContent from "@/components/_children/CarouselContent";
 
 type CardProjectProps = {
   title: string;
@@ -30,7 +30,7 @@ const CardProject: FC<CardProjectProps> = ({ title, desc, badge }) => {
             height={520}
           />
         </CarouselContent>
-        <div className=" rounded-b-[2.5rem] py-7 px-6 backdrop-blur-sm backdrop-filter">
+        <div className=" rounded-b-[2.5rem] py-7 px-6 bg-[#242529] opacity-80">
           <Link
             href={{
               pathname: "/project/[name-project]",

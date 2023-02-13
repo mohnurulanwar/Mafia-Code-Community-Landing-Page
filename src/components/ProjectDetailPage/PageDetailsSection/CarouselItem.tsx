@@ -1,6 +1,6 @@
 import { type FC } from "react";
 import Link from "next/link";
-import CarouselContent from "@/components/children/CarouselContent";
+import CarouselContent from "@/components/_children/CarouselContent";
 
 type CarouselItemProps = {
     children: React.ReactNode;

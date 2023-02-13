@@ -2,10 +2,27 @@ import type { FC } from "react";
 import Tab from "./Tab";
 import CardProject from "./CardProject";
 import Badge from "./child/Badge";
+import Image from "next/image";
 
 const OurProjectsSection: FC = () => {
   return (
-    <section className="section-container flex flex-col justify-center bg-base-500 py-10">
+    <section className="section-container flex flex-col justify-center py-10">
+      <span className="flex w-full justify-start absolute -z-10 opacity-90">
+        <Image
+          src="/img/bg-section/ellipse-blur3.svg"
+          className="-left-96"
+          alt="background section"
+          width={900}
+          height={900}
+        />
+      </span>
+      <Image
+        src="/img/bg-section/ellipse-blur4.svg"
+        className="absolute right-1/2"
+        alt="background section"
+        width={1000}
+        height={900}
+      />
       <h1 className="section-title">Our Projects</h1>
       <div className="tabs items-center justify-center gap-x-3 py-8 text-xl">
         <Tab tab="All" isActive />

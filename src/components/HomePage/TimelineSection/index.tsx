@@ -9,6 +9,7 @@ import {
   Hierarchy3,
 } from "iconsax-react";
 import { useBreakpoint } from "@/utils/screenWidthUtil";
+import Image from "next/image";
 
 const TimelineSection: FC = () => {
   const [iconSize, setIconSize] = useState(40);
@@ -21,7 +22,15 @@ const TimelineSection: FC = () => {
   }, [breakpoint]);
 
   return (
-    <section className="section-container flex flex-col justify-center bg-base-500 py-10">
+    <section className="section-container flex flex-col justify-center py-10">
+      <span className="flex justify-end absolute -right-96 -z-10 opacity-80">
+        <Image
+          src="/img/bg-section/ellipse-blur1.svg"
+          alt="background section"
+          width={1200}
+          height={900}
+        />
+      </span>
       <h1 className="section-title">Projects Timeline</h1>
       <div className="timeline-container-home mt-8 justify-center ">
         <div className="line min-h-[64vh] w-2 rounded-full bg-gradient-to-b from-[#ff1cf7] to-[#3F0741] md:min-h-[72vh] md:w-3 xl:min-h-[80vh] xl:w-4" />
