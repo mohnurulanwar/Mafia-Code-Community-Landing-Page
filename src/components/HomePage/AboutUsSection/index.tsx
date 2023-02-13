@@ -1,5 +1,6 @@
 import type { FC } from "react";
 import Image from "next/image";
+import Button from "./_children/Button";
 
 const AboutUsSection: FC = () => {
   return (
@@ -34,6 +35,7 @@ const AboutUsSection: FC = () => {
             vitae turpis massa. Ipsum a arcu cursus vitae. Egestas pretium
             aenean pharetra magna ac placer.....
           </p>
+          <Button />
         </div>
       </div>
     </section>
