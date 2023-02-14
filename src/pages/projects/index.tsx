@@ -1,9 +1,13 @@
 import { type NextPage } from "next";
+import Layout from "@/components/Layout";
+import { AllProjectsPage } from "@/components/AllProjectsPage";
 
 const Projects: NextPage = () => {
   return (
     <>
-      <h1>PROJECT PAGE</h1>
+      <Layout title="All Projects">
+        <AllProjectsPage />
+      </Layout>
     </>
   );
 };
