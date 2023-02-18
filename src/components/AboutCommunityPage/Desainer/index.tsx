@@ -5,6 +5,7 @@ import { Link } from 'iconsax-react';
 
 const UIDesainer: FC = () => {
     return (
+        
         <section>
             <h3 className="text-white text-3xl font-semibold ml-24 mt-28">UI/UX DESAINER</h3>
             <div className="flex mt-20 items-center justify-center">
