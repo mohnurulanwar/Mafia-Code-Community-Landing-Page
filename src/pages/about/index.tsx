@@ -1,11 +1,15 @@
 import { type NextPage } from "next";
 import Layout from "@/components/Layout";
-import { HeadCoverSection } from "@/components/AboutCommunityPage"
+import { BackendEngineer, FrontendEngineer, HeadCoverSection, MeetOurTeams, UIDesainer } from "@/components/AboutCommunityPage"
 
 const About: NextPage = () => {
   return (
     <Layout title="About Community | Mafia Code">
       <HeadCoverSection />
+      <MeetOurTeams/>
+      <UIDesainer/>
+      <FrontendEngineer/>
+      <BackendEngineer/>
     </Layout >
   );
 };

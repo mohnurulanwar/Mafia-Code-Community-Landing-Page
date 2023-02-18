@@ -1,5 +1,4 @@
 import { type FC } from 'react';
-
 const AboutCommunityPage: FC = () => {
     return (
         <section className="flex items-center h-screen w-4/5 mx-auto">
